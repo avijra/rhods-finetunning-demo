@@ -145,4 +145,4 @@ oc get route -n redhat-ods-applications | grep dash | awk '{print $2}'
 
 ```
 
-#### Start with launching the CodeFlare notebook from the Red Hat OpenShift AI’s dashboard and cloning the demo repository, which includes the notebook and necessary files for the demo. Try the notebook gpt2-finetune-serve.ipynb to demo the fine-tuning job submission.
+#### Start with launching the CodeFlare notebook from the Red Hat OpenShift AI’s dashboard and cloning the demo repository, which includes the notebook and necessary files for the demo. Try the notebook llamafinetune_demo.ipynb to demo the fine-tuning job submission.
