@@ -7,7 +7,10 @@ Open the OpenShift Container Platform web console.
 Install the NFD Operator using the Red Hat OperatorHub catalog.
 Step 2: Verification
 
+```bash
 $ oc get pods -n openshift-nfd
+```
+
 You should see the NFD Operator running.
 
 Step 3: Creating an Instance of Node Feature Discovery
