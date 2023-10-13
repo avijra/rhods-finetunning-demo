@@ -150,7 +150,7 @@ oc get route -n redhat-ods-applications | grep dash | awk '{print $2}'
 # FineTuning 
 ## Start with launching the CodeFlare notebook from the Red Hat OpenShift AI’s dashboard and cloning  this repository, which includes the notebook and necessary files for the demo. Try the notebook llamafinetune_demo.ipynb to demo the fine-tuning job submission.
 
-#### After the job is run completed you should find your models in your HF repo like this for example 
+#### After the job run is completed you should find your models in your HF repo like this for example 
 
 ```bash
 https://huggingface.co/avijra/Llama-2-7b-chat-hf-fine-tuned
