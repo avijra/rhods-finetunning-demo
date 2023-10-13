@@ -1,4 +1,7 @@
-# Pre-requsites 
+# This is complete demo to show the capabilities of RHODS finetuning using codeflare(ray,macd,instascale), with inferencing using TGIS-Caikit
+
+
+## Pre-requsites 
 
 ## Installing the Node Feature Discovery (NFD) Operator
 
