@@ -7,7 +7,8 @@ from datasets import load_dataset
 import transformers
 from peft import PeftModel
 
-token = "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"
+#get your HF token :)
+token = "xxxxxxxxxxxxxxxxxxxxxxxx"
 HfFolder.save_token(token)
 
 model_id = "meta-llama/Llama-2-7b-chat-hf" ## "Trelis/Llama-2-7b-chat-hf-sharded-bf16" is an alternative if you don't have access via Meta on HuggingFace
@@ -72,7 +73,9 @@ trainer = transformers.Trainer(
         fp16=True,
         logging_steps=1,
         output_dir="outputs",
-        optim="paged_adamw_8bit"
+        optim="paged_adamw_8bit",
+        ddp_find_unused_parameters=False # this makes the job run on CF fine. credits @Michael Clifford
+ 
     ),
     data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False),
 )
@@ -82,8 +85,8 @@ trainer.train()
 base_model_name = model_id.split("/")[-1]
 
 # Define the save and push paths
-adapter_model = f"avijra/{base_model_name}-fine-tuned-adapters"  #adjust 'Trelis' to your HuggingFace organisation
-new_model = f"avijra/{base_model_name}-fine-tuned" #adjust 'Trelis' to your HuggingFace organisation
+adapter_model = f"avijra/{base_model_name}-fine-tuned-adapters"  #adjust 'avijra' to your HuggingFace organisation
+new_model = f"avijra/{base_model_name}-fine-tuned" #adjust 'avijra' to your HuggingFace organisation
 
 # Save the model
 model.save_pretrained(adapter_model, push_to_hub=True, use_auth_token=True)
