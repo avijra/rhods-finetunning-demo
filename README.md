@@ -1,4 +1,4 @@
-# Installing the Node Feature Discovery (NFD) Operator and NVIDIA GPU Operator on OpenShift
+# Pre-requsites 
 
 ## Installing the Node Feature Discovery (NFD) Operator
 
