@@ -1,5 +1,7 @@
-Installing the Node Feature Discovery (NFD) Operator and NVIDIA GPU Operator on OpenShift
-Installing the Node Feature Discovery (NFD) Operator
+# Installing the Node Feature Discovery (NFD) Operator and NVIDIA GPU Operator on OpenShift
+
+## Installing the Node Feature Discovery (NFD) Operator
+
 Step 1: Installation
 Open the OpenShift Container Platform web console.
 Install the NFD Operator using the Red Hat OperatorHub catalog.
