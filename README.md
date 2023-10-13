@@ -1,4 +1,4 @@
-# This is complete demo to show the capabilities of RHODS finetuning using codeflare(ray,mcad,instascale), with inferencing using TGIS-Caikit
+## This is complete demo to show the capabilities of RHODS finetuning using codeflare(ray,mcad,instascale), with inferencing using TGIS-Caikit
 
 
 ## Pre-requsites 
@@ -147,7 +147,7 @@ Execute the following command:
 oc get route -n redhat-ods-applications | grep dash | awk '{print $2}'
 
 ```
-
+# FineTuning 
 ## Start with launching the CodeFlare notebook from the Red Hat OpenShift AI’s dashboard and cloning  this repository, which includes the notebook and necessary files for the demo. Try the notebook llamafinetune_demo.ipynb to demo the fine-tuning job submission.
 
 #### After the job is run completed you should find your models in your HF repo like this for example 
@@ -157,5 +157,8 @@ https://huggingface.co/avijra/Llama-2-7b-chat-hf-fine-tuned
 ```
 
 ### P.S. this   job am only running for "max_steps=10" only for demo purposes, in real world scenarios consider running for maximum steps so that your loss < 0.5 
+
+# Inferencing
+## Try the notebook llamainfer_demo.ipynb to demo the model Inferencing.
 
 
