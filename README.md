@@ -160,5 +160,5 @@ https://huggingface.co/avijra/Llama-2-7b-chat-hf-fine-tuned
 
 # Inferencing
 ## Try the notebook llamainfer_demo.ipynb to demo the model Inferencing.
-
+#### please note for inferencing you would require notebook tunning on rhods with minimum 30GB mem and python 3.9 .Also note codeflare notebook image right now only has python 3.8 so it not work . choose python 3.9 notebook for inferencing tasks 
 
