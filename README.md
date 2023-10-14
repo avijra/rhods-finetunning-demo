@@ -1,4 +1,4 @@
-## This is complete demo to show the capabilities of RHODS finetuning using codeflare(ray,mcad,instascale), with inferencing using TGIS-Caikit
+## This is complete demo to show the capabilities of RHODS for model finetuning using codeflare(ray,mcad,instascale) and inferencing using TGIS-Caikit
 
 
 ## Pre-requsites 
